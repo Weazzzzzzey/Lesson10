@@ -74,5 +74,20 @@ namespace CRMCustomer.test
             //Asset
             Assert.AreEqual(result, "");
         }
+
+        [TestMethod]
+
+        public void PateikiamiGeriDuomenisTikimasiGautiTrue()
+        {
+            
+            var expected = true;
+            
+            //Arange
+            parengimas();
+            //act
+            bool acual = cus1.Validate();
+            //Asset
+            Assert.AreEqual(expected, acual);
+        }
     }
 }

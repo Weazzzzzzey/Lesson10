@@ -8,7 +8,7 @@ namespace CRMBusinessLogicLayer
 {
     public class Customer
     {
-        public int CustomerID { get; set; }
+        public int CustomerID { get; private set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FullName
@@ -25,11 +25,21 @@ namespace CRMBusinessLogicLayer
         public string HomeAddresw { get; set; }
         public string WorklAddresw { get; set; }
 
+        public Customer()
+        {
+
+        }
+
+        public Customer(int ID)
+        {
+            this.CustomerID = ID;
+        }
+
         public bool Validate()
         {
             bool isValid = true;
 
-            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(FullName)) isValid = false;
 
             return isValid;
         }
@@ -51,7 +61,6 @@ namespace CRMBusinessLogicLayer
             //Code that returns all of the customers
             return new List<Customer>();
         }
-    
     
     }
 }
