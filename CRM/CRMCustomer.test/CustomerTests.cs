@@ -5,7 +5,7 @@ using CRMBusinessLogicLayer;
 namespace CRMCustomer.test
 {
     [TestClass]
-    public class UnitTest1
+    public class CustomerTests
     {
 
         Customer cus1 = new Customer();
@@ -80,7 +80,7 @@ namespace CRMCustomer.test
         public void PateikiamiGeriDuomenisTikimasiGautiTrue()
         {
             
-            var expected = true;
+            bool expected = true;
             
             //Arange
             parengimas();

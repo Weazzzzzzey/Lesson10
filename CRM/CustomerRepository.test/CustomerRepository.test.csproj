@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F475148-0E2B-42D2-A12E-586594E3C96E}</ProjectGuid>
+    <ProjectGuid>{AC164571-B0D2-4C37-8055-400A9C979A89}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CRMCustomer.test</RootNamespace>
-    <AssemblyName>CRMCustomer.test</AssemblyName>
+    <RootNamespace>CustomerRepository.test</RootNamespace>
+    <AssemblyName>CustomerRepository.test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,18 +49,13 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerRepositoryTests.cs" />
-    <Compile Include="CustomerTests.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CRMBusinessLogicLayer\CRMBusinessLogicLayer.csproj">
-      <Project>{d411651c-3068-4d56-8dfc-0909294e6d41}</Project>
-      <Name>CRMBusinessLogicLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CRM\CRM.csproj">
       <Project>{37d9c225-5b23-4eb8-879c-e1b847b1d913}</Project>
       <Name>CRM</Name>
