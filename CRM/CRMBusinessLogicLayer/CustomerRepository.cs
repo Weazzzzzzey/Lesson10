@@ -21,9 +21,6 @@ namespace CRMBusinessLogicLayer
             }
             return customer;
         }
-
-
-    
     
     }
 }
